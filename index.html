@@ -116,6 +116,34 @@
 				line-height: 1.6;
 			}
 
+			/* Adding Triangle for Odd Cards */
+			.timeline-item:nth-child(odd) .timeline-content::before {
+				content: '';
+				position: absolute;
+				top: 20px; /* Adjust based on where you want the triangle */
+				right: -15px; /* Positioning the triangle towards the timeline */
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 10px 0 10px 15px; /* Creates the triangle */
+				border-color: transparent transparent transparent #fff; /* Matches the card background */
+				box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for realism */
+			}
+
+			/* Adding Triangle for Even Cards */
+			.timeline-item:nth-child(even) .timeline-content::before {
+				content: '';
+				position: absolute;
+				top: 20px; /* Adjust based on where you want the triangle */
+				left: -15px; /* Positioning the triangle towards the timeline */
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 10px 15px 10px 0; /* Creates the triangle */
+				border-color: transparent #fff transparent transparent; /* Matches the card background */
+				box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for realism */
+			}
+
 			/* Responsive Design */
 			@media screen and (max-width: 768px) {
 				.timeline::before {
