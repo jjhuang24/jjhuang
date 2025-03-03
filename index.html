@@ -39,33 +39,18 @@
 			/* Adds spacing between the logo and text */
 		}
 
-		#about .row {
-			display: flex;
-			align-items: center;
-			/* Keeps image and text aligned */
-			flex-wrap: wrap;
-			/* Ensures responsiveness on smaller screens */
-		}
-
-		#about .col-md-3 {
-			flex: 1;
-			/* Allows the image container to scale proportionally */
-			max-width: 25%;
-			/* Keeps the image at a reasonable size */
-		}
-
-		#about .col-md-9 {
-			flex: 2;
-			/* Allows text to scale at the same rate */
-		}
-
-		#about img {
+		.img-container, .content-container {
+			background-color: #fff; /* Match your desired background color */
+			padding: 15px;
 			width: 100%;
-			/* Ensures the image scales properly */
-			height: auto;
-			/* Maintains aspect ratio */
-			max-width: 100%;
-			/* Prevents excessive stretching */
+		}
+
+		.content-container {
+			padding-left: 0px; /* Reduced padding on the left side */
+		}
+
+		.object-fit-cover {
+			object-fit: cover;
 		}
 	</style>
 </head>
@@ -180,33 +165,40 @@
 
 		<!-- About Section -->
 		<section id="about">
-			<div class="row">
-				<div class="col-md-3">
-					<img src="images/Joseph_Professional.JPG" alt="Joseph" class="img-fluid rounded shadow">
+			<div class="row d-flex align-items-stretch">
+				<div class="col-md-3 d-flex align-items-stretch">
+					<div class="img-container h-100 w-100">
+						<img src="images/Joseph_Professional.JPG" alt="Joseph"
+							class="img-fluid rounded shadow w-100 h-100 object-fit-cover">
+					</div>
 				</div>
-				<div class="col-md-9">
-					<h2>About Me</h2>
-					<p>
-						Hello! I am currently pursuing a Master’s degree in Electrical and Computer Engineering at
-						Purdue University, where I work as a Graduate Research Assistant in the <a
+				<div class="col-md-9 d-flex align-items-stretch">
+					<div class="content-container h-100">
+						<h2>About Me</h2>
+						<p>
+							Hello! I am currently pursuing a Master's degree in Electrical and Computer Engineering at
+							Purdue University, where I work as a Graduate Research Assistant in the <a
 							href="https://engineering.purdue.edu/~ips/">Video and Image Processing Laboratory
 							(VIPER)</a> supervised by <a href="https://engineering.purdue.edu/~zhu0/">Professor Fengqing
-							Maggie Zhu</a>. My research focuses on anomaly detection in images, where I explore methods
-						to identify irregularities or defects in visual data, leveraging techniques from computer vision
-						and machine learning to improve accuracy. Prior to this, I earned my Bachelor’s degree in
-						Computer Engineering from Purdue University in 2024.
-					</p>
-					<p>
-						In addition to my academic pursuits, I have one year of professional software development
-						experience, gained through internships at Siemens Digital Industries Software and Kinze
-						Manufacturing. During these roles, I worked on developing software solutions, optimizing
-						workflows, and gaining hands-on experience in real-world engineering applications.
-					</p>
-					<p>
-						Outside of academics and work, I enjoy staying active through sports, enjoying time with
-						friends, playing musical instruments, and continuously finding new ways to challenge
-						myself.<br />
-					</p>
+								Maggie Zhu</a>. My research focuses on anomaly detection in images, where I explore
+							methods
+							to identify irregularities or defects in visual data, leveraging techniques from computer
+							vision
+							and machine learning to improve accuracy. Prior to this, I earned my Bachelor's degree in
+							Computer Engineering from Purdue University in 2024.
+						</p>
+						<p>
+							In addition to my academic pursuits, I have one year of professional software development
+							experience, gained through internships at Siemens Digital Industries Software and Kinze
+							Manufacturing. During these roles, I worked on developing software solutions, optimizing
+							workflows, and gaining hands-on experience in real-world engineering applications.
+						</p>
+						<p>
+							Outside of academics and work, I enjoy staying active through sports, enjoying time with
+							friends, playing musical instruments, and continuously finding new ways to challenge
+							myself.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
