@@ -17,6 +17,22 @@
 		body {
 			display: flex;
 		}
+
+		.nav-pills .nav-link.active {
+			color: white !important;
+			/* Change text color to white when active */
+		}
+
+		.nav-pills .nav-link.active svg {
+			fill: white !important;
+			/* Change icon color to white when active */
+		}
+		.company-logo {
+			width: 60px; /* Fixed width */
+			height: 60px; /* Fixed height to maintain consistency */
+			object-fit: contain; /* Ensures the entire logo is visible without distortion */
+			margin-right: 15px; /* Adds spacing between the logo and text */
+		}
 	</style>
 </head>
 
@@ -79,6 +95,14 @@
 						<use xlink:href="#home"></use>
 					</svg>
 					Home
+				</a>
+			</li>
+			<li>
+				<a href="#education" class="nav-link link-body-emphasis">
+					<svg class="bi pe-none me-2" width="16" height="16">
+						<use xlink:href="#table"></use>
+					</svg>
+					Education
 				</a>
 			</li>
 			<li>
@@ -153,6 +177,41 @@
 			</div>
 		</section>
 
+		<!-- Education Section -->
+		<section id="education">
+			<h2>&nbspEducation</h2>
+			<p></p>
+			<div class="container-fluid">
+				<!-- Education Item 1 -->
+				<div class="col-md-12 mb-4">
+					<div class="card shadow-sm">
+						<div class="card-body d-flex align-items-center">
+							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
+							<div>
+								<h5 class="card-title">M.S. Student in Electrical and Computer Engineering</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
+								<p class="card-text"><strong>Duration:</strong> January 2025 - Present</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Education Item 2 -->
+				<div class="col-md-12 mb-4">
+					<div class="card shadow-sm">
+						<div class="card-body d-flex align-items-center">
+							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
+							<div>
+								<h5 class="card-title">B.S. Computer Engineering</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
+								<p class="card-text"><strong>Duration:</strong> August 2021 - December 2024</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Experience Section -->
 		<section id="experience">
 			<h2>&nbspExperience</h2>
@@ -161,12 +220,16 @@
 				<!-- Experience Item 1 -->
 				<div class="col-md-12 mb-4">
 					<div class="card shadow-sm">
-						<div class="card-body">
-							<h5 class="card-title">Graduate Research Assistant</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
-							<p class="card-text"><strong>Duration:</strong> January 2025 - Present</p>
-							<p class="card-text">Conducting research in image processing and computer vision under the
-								guidance of Professor Fengqing Maggie Zhu.</p>
+						<div class="card-body d-flex align-items-center">
+							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
+							<div>
+								<h5 class="card-title">Graduate Research Assistant</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
+								<p class="card-text"><strong>Duration:</strong> January 2025 - Present</p>
+								<p class="card-text">Conducting research in image processing and computer vision under
+									the
+									guidance of Professor Fengqing Maggie Zhu.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -174,13 +237,18 @@
 				<!-- Experience Item 2 -->
 				<div class="col-md-12 mb-4">
 					<div class="card shadow-sm">
-						<div class="card-body">
-							<h5 class="card-title">Software Engineer Intern</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Siemens Digital Industries Software</h6>
-							<p class="card-text"><strong>Duration:</strong> May 2024 - August 2024</p>
-							<p class="card-text">Developed python scripts to automate compilations of large SoC (System
-								on a Chip) designs. Implemented a user interface to visualize analytics from
-								compilations using interactive plots and tables.</p>
+						<div class="card-body d-flex align-items-center">
+							<img src="images/siemens-logo.png" alt="Siemens Logo" class="company-logo me-3">
+							<div>
+								<h5 class="card-title">Software Engineer Intern</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Siemens Digital Industries Software</h6>
+								<p class="card-text"><strong>Duration:</strong> May 2024 - August 2024</p>
+								<p class="card-text">Developed python scripts to automate compilations of large SoC
+									(System
+									on a Chip) designs. Implemented a user interface to visualize analytics from
+									compilations using interactive plots and tables. Deployed project on designs from 4
+									major semiconductor companies, streamlining workflows across 4+ projects.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -188,14 +256,20 @@
 				<!-- Experience Item 3 -->
 				<div class="col-md-12 mb-4">
 					<div class="card shadow-sm">
-						<div class="card-body">
-							<h5 class="card-title">Software Engineer Intern</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Kinze Manufacturing</h6>
-							<p class="card-text"><strong>Duration:</strong> May 2023 - December 2023</p>
-							<p class="card-text">Worked with a team of 6 developers in an Agile environment on the Kinze
-								Blue Vantage software. Corrected user interface bugs ranging from visual issues to
-								functionality issues. Developed several new features in the Blue Vantage user interface
-								using Java and XML. Conducted regular testing on the user interface to identify bugs</p>
+						<div class="card-body d-flex align-items-center">
+							<img src="images/kinze-logo.png" alt="Kinze Manufacturing Logo" class="company-logo me-3">
+							<div>
+								<h5 class="card-title">Software Engineer Intern</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Kinze Manufacturing</h6>
+								<p class="card-text"><strong>Duration:</strong> May 2023 - December 2023</p>
+								<p class="card-text">Worked with a team of 6 developers in an Agile environment on the
+									Kinze
+									Blue Vantage software. Corrected user interface bugs ranging from visual issues to
+									functionality issues. Developed several new features in the Blue Vantage user
+									interface
+									using Java and XML. Conducted regular testing on the user interface to identify bugs.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -203,21 +277,29 @@
 				<!-- Experience Item 4 -->
 				<div class="col-md-12 mb-4">
 					<div class="card shadow-sm">
-						<div class="card-body">
-							<h5 class="card-title">Undergraduate Teaching Assistant</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
-							<p class="card-text"><strong>Duration:</strong> January 2022 - December 2024</p>
-							<p class="card-text">Teaching assistant for muliple classes including CS 159 (Intro to C
-								Programmming), ECE 20875 (Python for Data Science), ECE 270 (Digital System Design), ECE
-								362 (Microprocessor Systems and Interfacing), and ECE 570 (Artifical Intellegence). Some
-								of my responsibilities included holding regular office hours, grading written
-								assignments, teaching lab sections with 30+ students over a 3‑hour period weekly, and
-								developed auto‑grading scripts in Python to streamline the grading process</p>
+						<div class="card-body d-flex align-items-center">
+							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
+							<div>
+								<h5 class="card-title">Undergraduate Teaching Assistant</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
+								<p class="card-text"><strong>Duration:</strong> January 2022 - December 2024</p>
+								<p class="card-text">Teaching assistant for multiple classes including CS 159 (Intro to
+									C
+									Programming), ECE 20875 (Python for Data Science), ECE 270 (Digital System Design),
+									ECE
+									362 (Microprocessor Systems and Interfacing), and ECE 570 (Artificial Intelligence).
+									Some
+									of my responsibilities included holding regular office hours, grading written
+									assignments, teaching lab sections with 30+ students over a 3‑hour period weekly,
+									and
+									developing auto‑grading scripts in Python to streamline the grading process.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 	</div>
 	</div>
 
@@ -232,10 +314,10 @@
 			const navLinks = document.querySelectorAll(".nav-link");
 			const sections = document.querySelectorAll("section");
 			const offset = 100; // Adjust for smoothness
-	
+
 			const updateActiveLink = () => {
 				let currentSection = "";
-	
+
 				// Determine the current section based on scroll position
 				sections.forEach((section) => {
 					const sectionTop = section.offsetTop - offset;
@@ -243,7 +325,7 @@
 						currentSection = section.id;
 					}
 				});
-	
+
 				// Update active class in sidebar
 				navLinks.forEach((link) => {
 					link.classList.remove("active");
@@ -252,15 +334,15 @@
 					}
 				});
 			};
-	
+
 			// Listen for scroll events
 			window.addEventListener("scroll", updateActiveLink);
-	
+
 			// Initialize the active link on page load
 			updateActiveLink();
 		});
 	</script>
-	
+
 </body>
 
 </html>
