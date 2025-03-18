@@ -81,6 +81,48 @@
 			color: black;
 			/* Removes the underline */
 		}
+
+
+		/* Sidebar collapse CSS */
+		.sidebar-container {
+			position: relative;
+		}
+
+		.collapse-btn {
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			z-index: 1050;
+		}
+
+		.sidebar.collapsed {
+			margin-left: -280px;
+		}
+
+		/* Add this for main content adjustment when using the sidebar */
+		.content-wrapper {
+			margin-left: 280px;
+			transition: all 0.3s;
+		}
+
+		.content-wrapper.expanded {
+			margin-left: 0;
+		}
+
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+			.sidebar {
+				margin-left: -280px;
+			}
+
+			.sidebar.active {
+				margin-left: 0;
+			}
+
+			.content-wrapper {
+				margin-left: 0;
+			}
+		}
 	</style>
 </head>
 
@@ -126,7 +168,69 @@
 		</symbol>
 	</svg>
 
-	<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
+	<!-- Sidebar with collapse functionality -->
+	<div class="sidebar-container">
+		<!-- Hamburger toggle button - visible only on small screens -->
+		<button class="btn btn-primary d-md-none collapse-btn" type="button" id="sidebarCollapse">
+			<i class="fas fa-bars"></i>
+		</button>
+
+		<!-- Sidebar content -->
+		<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary sidebar" id="sidebar"
+			style="width: 280px; position: fixed; top: 0; left: 0; height: 100vh; transition: all 0.3s;">
+			<a href="#about"
+				class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+				<svg class="bi pe-none me-2" width="40" height="32">
+					<use xlink:href="#jh"></use>
+				</svg>
+				<span class="fs-4">Joseph Huang</span>
+			</a>
+			<hr>
+			<ul class="nav nav-pills flex-column mb-auto">
+				<li class="nav-item">
+					<a href="#about" class="nav-link link-body-emphasis">
+						<svg class="bi pe-none me-2" width="16" height="16">
+							<use xlink:href="#home"></use>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#education" class="nav-link link-body-emphasis">
+						<svg class="bi pe-none me-2" width="16" height="16">
+							<use xlink:href="#table"></use>
+						</svg>
+						Education
+					</a>
+				</li>
+				<li>
+					<a href="#experience" class="nav-link link-body-emphasis">
+						<svg class="bi pe-none me-2" width="16" height="16">
+							<use xlink:href="#speedometer2"></use>
+						</svg>
+						Experience
+					</a>
+				</li>
+			</ul>
+
+			<div class="social-icons mt-auto">
+				<a style="margin: 0 5px 0 0" href="assets/Joseph_Huang_Resume.pdf" target="_blank">
+					<i class="ai ai-cv" style="font-size:1.3rem;"></i>
+				</a>
+				<a style="margin: 0 5px 0 0" href="https://github.com/jjhuang24" target="_blank">
+					<i class="fab fa-github" style="font-size: 1.3rem;"></i>
+				</a>
+				<a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/josephjhuang/" target="_blank">
+					<i class="fab fa-linkedin" style="font-size: 1.3rem;"></i>
+				</a>
+				<a style="margin: 0 5px 0 0" href="mailto:jjhuang@purdue.edu">
+					<i class="fas fa-envelope" style="font-size:1.3rem;"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
 		style="width: 280px; position: fixed; top: 0; left: 0; height: 100vh;">
 		<a href="#about"
 			class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -161,22 +265,6 @@
 					Experience
 				</a>
 			</li>
-			<!-- <li>
-				<a href="publications.html" class="nav-link link-body-emphasis">
-					<svg class="bi pe-none me-2" width="16" height="16">
-						<use xlink:href="#grid"></use>
-					</svg>
-					Publications
-				</a>
-			</li> -->
-			<!-- <li>
-				<a href="news.html" class="nav-link link-body-emphasis">
-					<svg class="bi pe-none me-2" width="16" height="16">
-						<use xlink:href="#people-circle"></use>
-					</svg>
-					News
-				</a>
-			</li> -->
 		</ul>
 
 		<div class="social-icons mt-auto">
@@ -193,7 +281,7 @@
 				<i class="fas fa-envelope" style="font-size:1.3rem;"></i>
 			</a>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Main content -->
 	<div class="container-fluid" style="margin-left: 300px; padding: 20px;">
@@ -205,7 +293,8 @@
 				<tbody>
 					<tr>
 						<td>
-							<img src="images/Joseph_Professional.JPG" alt="Joseph" width="250px" style="padding-right: 20px;">&nbsp;
+							<img src="images/Joseph_Professional.JPG" alt="Joseph" width="250px"
+								style="padding-right: 20px;">&nbsp;
 						</td>
 						<td align="left">
 							<h2>About Me</h2>
@@ -372,6 +461,38 @@
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
 	<script src="main.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		  const sidebarCollapse = document.getElementById('sidebarCollapse');
+		  const sidebar = document.getElementById('sidebar');
+		  const contentWrapper = document.querySelector('.content-wrapper') || document.body;
+		  
+		  // Default state for mobile devices
+		  if (window.innerWidth <= 768) {
+			sidebar.classList.add('collapsed');
+			contentWrapper.classList.add('expanded');
+		  }
+		  
+		  sidebarCollapse.addEventListener('click', function() {
+			sidebar.classList.toggle('collapsed');
+			sidebar.classList.toggle('active');
+			contentWrapper.classList.toggle('expanded');
+		  });
+		  
+		  // Close sidebar when clicking on links (for mobile)
+		  const navLinks = document.querySelectorAll('.sidebar .nav-link');
+		  navLinks.forEach(function(link) {
+			link.addEventListener('click', function() {
+			  if (window.innerWidth <= 768) {
+				sidebar.classList.add('collapsed');
+				sidebar.classList.remove('active');
+				contentWrapper.classList.add('expanded');
+			  }
+			});
+		  });
+		});
+	  </script>
 
 	<script>
 		// Highlight active sidebar link based on scroll position
