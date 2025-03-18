@@ -111,16 +111,15 @@
 
 		/* Responsive adjustments */
 		@media (max-width: 768px) {
-			.sidebar {
-				margin-left: -280px;
-			}
-
-			.sidebar.active {
-				margin-left: 0;
-			}
-
 			.content-wrapper {
-				margin-left: 0;
+				margin-left: 0 !important;
+				width: 100%;
+			}
+
+			/* Make sure the sidebar doesn't push content when it appears */
+			.sidebar.active {
+				z-index: 1040;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 			}
 		}
 	</style>
@@ -284,7 +283,7 @@
 	</div> -->
 
 	<!-- Main content -->
-	<div class="container-fluid" style="margin-left: 300px; padding: 20px;">
+	<div class="container-fluid content-wrapper" id="mainContent" style="transition: all 0.3s;">
 
 		<!-- About Section -->
 		<section id="about">
@@ -463,36 +462,58 @@
 	<script src="main.js"></script>
 
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-		  const sidebarCollapse = document.getElementById('sidebarCollapse');
-		  const sidebar = document.getElementById('sidebar');
-		  const contentWrapper = document.querySelector('.content-wrapper') || document.body;
-		  
-		  // Default state for mobile devices
-		  if (window.innerWidth <= 768) {
-			sidebar.classList.add('collapsed');
-			contentWrapper.classList.add('expanded');
-		  }
-		  
-		  sidebarCollapse.addEventListener('click', function() {
-			sidebar.classList.toggle('collapsed');
-			sidebar.classList.toggle('active');
-			contentWrapper.classList.toggle('expanded');
-		  });
-		  
-		  // Close sidebar when clicking on links (for mobile)
-		  const navLinks = document.querySelectorAll('.sidebar .nav-link');
-		  navLinks.forEach(function(link) {
-			link.addEventListener('click', function() {
-			  if (window.innerWidth <= 768) {
+		document.addEventListener('DOMContentLoaded', function () {
+			const sidebarCollapse = document.getElementById('sidebarCollapse');
+			const sidebar = document.getElementById('sidebar');
+			const mainContent = document.getElementById('mainContent');
+
+			// Function to adjust main content based on screen size and sidebar state
+			function adjustMainContent() {
+				if (window.innerWidth <= 768) {
+					// Mobile view
+					mainContent.style.marginLeft = '0px';
+				} else {
+					// Desktop view - adjust based on sidebar state
+					if (sidebar.classList.contains('collapsed')) {
+						mainContent.style.marginLeft = '0px';
+					} else {
+						mainContent.style.marginLeft = '300px';
+					}
+				}
+			}
+
+			// Initial adjustment on page load
+			adjustMainContent();
+
+			// Default state for mobile devices
+			if (window.innerWidth <= 768) {
 				sidebar.classList.add('collapsed');
 				sidebar.classList.remove('active');
-				contentWrapper.classList.add('expanded');
-			  }
+			}
+
+			// Toggle sidebar visibility
+			sidebarCollapse.addEventListener('click', function () {
+				sidebar.classList.toggle('collapsed');
+				sidebar.classList.toggle('active');
+				adjustMainContent();
 			});
-		  });
+
+			// Close sidebar when clicking on links (for mobile)
+			const navLinks = document.querySelectorAll('.sidebar .nav-link');
+			navLinks.forEach(function (link) {
+				link.addEventListener('click', function () {
+					if (window.innerWidth <= 768) {
+						sidebar.classList.add('collapsed');
+						sidebar.classList.remove('active');
+						adjustMainContent();
+					}
+				});
+			});
+
+			// Adjust content on window resize
+			window.addEventListener('resize', adjustMainContent);
 		});
-	  </script>
+	</script>
 
 	<script>
 		// Highlight active sidebar link based on scroll position
