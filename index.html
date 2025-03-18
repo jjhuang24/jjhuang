@@ -82,6 +82,20 @@
 			/* Removes the underline */
 		}
 
+		.spacer {
+			margin-bottom: 0.5cm;
+		}
+
+		/* Responsive About Section */
+		@media (max-width: 768px) {
+			.about-container .row {
+				flex-direction: column;
+			}
+
+			.about-container img {
+				margin-bottom: 20px;
+			}
+		}
 
 		/* Sidebar collapse CSS */
 		.sidebar-container {
@@ -229,65 +243,50 @@
 		</div>
 	</div>
 
-	<!-- <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
-		style="width: 280px; position: fixed; top: 0; left: 0; height: 100vh;">
-		<a href="#about"
-			class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-			<svg class="bi pe-none me-2" width="40" height="32">
-				<use xlink:href="#jh"></use>
-			</svg>
-			<span class="fs-4">Joseph Huang</span>
-		</a>
-		<hr>
-		<ul class="nav nav-pills flex-column mb-auto">
-			<li class="nav-item">
-				<a href="#about" class="nav-link link-body-emphasis">
-					<svg class="bi pe-none me-2" width="16" height="16">
-						<use xlink:href="#home"></use>
-					</svg>
-					Home
-				</a>
-			</li>
-			<li>
-				<a href="#education" class="nav-link link-body-emphasis">
-					<svg class="bi pe-none me-2" width="16" height="16">
-						<use xlink:href="#table"></use>
-					</svg>
-					Education
-				</a>
-			</li>
-			<li>
-				<a href="#experience" class="nav-link link-body-emphasis">
-					<svg class="bi pe-none me-2" width="16" height="16">
-						<use xlink:href="#speedometer2"></use>
-					</svg>
-					Experience
-				</a>
-			</li>
-		</ul>
-
-		<div class="social-icons mt-auto">
-			<a style="margin: 0 5px 0 0" href="assets/Joseph_Huang_Resume.pdf" target="_blank">
-				<i class="ai ai-cv" style="font-size:1.3rem;"></i>
-			</a>
-			<a style="margin: 0 5px 0 0" href="https://github.com/jjhuang24" target="_blank">
-				<i class="fab fa-github" style="font-size: 1.3rem;"></i>
-			</a>
-			<a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/josephjhuang/" target="_blank">
-				<i class="fab fa-linkedin" style="font-size: 1.3rem;"></i>
-			</a>
-			<a style="margin: 0 5px 0 0" href="mailto:jjhuang@purdue.edu">
-				<i class="fas fa-envelope" style="font-size:1.3rem;"></i>
-			</a>
-		</div>
-	</div> -->
-
 	<!-- Main content -->
 	<div class="container-fluid content-wrapper" id="mainContent" style="transition: all 0.3s;">
-
 		<!-- About Section -->
-		<section id="about">
-			<!-- About Section -->
+		<section id="about" class="py-5">
+			<!-- About Section with responsive layout -->
+			<div class="container">
+				<div class="row g-4 align-items-center">
+					<div class="col-md-4 text-center text-md-start">
+						<div class="image-container mb-4 mb-md-0">
+							<img src="images/Joseph_Professional.JPG" alt="Joseph" class="img-fluid rounded"
+								style="max-width: 100%; height: auto;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h2>About Me</h2>
+						<p>
+							Hello! I am currently pursuing a Master's degree in Electrical and Computer Engineering
+							at Purdue University, where I work as a Graduate Research Assistant in the <a
+								href="https://engineering.purdue.edu/~ips/">Video and Image Processing Laboratory
+								(VIPER)</a> supervised by <a href="https://engineering.purdue.edu/~zhu0/">Professor
+								Fengqing Maggie Zhu</a>. My research focuses on anomaly detection in images, where I
+							explore
+							methods to identify irregularities or defects in visual data, leveraging techniques from
+							computer vision and machine learning to improve accuracy. Prior to this, I earned my
+							Bachelor's degree in Computer Engineering from Purdue University in 2024.
+						</p>
+						<p>
+							In addition to my academic pursuits, I have one year of professional software
+							development experience, gained through internships at Siemens Digital Industries Software
+							and Kinze
+							Manufacturing. During these roles, I worked on developing software solutions, optimizing
+							workflows, and gaining hands-on experience in real-world engineering applications.
+						</p>
+						<p>
+							Outside of academics and work, I enjoy staying active through sports, enjoying time with
+							friends, playing musical instruments, and continuously finding new ways to challenge
+							myself.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section id="about">
 			<table class="imgtable">
 				<tbody>
 					<tr>
@@ -326,7 +325,7 @@
 					</tr>
 				</tbody>
 			</table>
-		</section>
+		</section> -->
 
 
 		<!-- Education Section -->
