@@ -6,33 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Joseph Huang Personal Website</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css"
-		integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+	integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 	<link rel="shortcut icon" href="https://www.purdue.edu/purdue/images/favicon.ico">
-
+	
 	<style>
 		/* Basic styling for smooth scroll */
 		html {
 			scroll-behavior: smooth;
 		}
-
+		
 		body {
 			display: flex;
 		}
-
+		
 		.nav-pills .nav-link.active {
 			color: white !important;
 			/* Change text color to white when active */
 		}
-
+		
 		.nav-pills .nav-link.active svg {
 			fill: white !important;
 			/* Change icon color to white when active */
 		}
-
+		
 		.company-logo {
 			width: 60px;
 			/* Fixed width */
@@ -43,7 +43,7 @@
 			margin-right: 15px;
 			/* Adds spacing between the logo and text */
 		}
-
+		
 		.img-container,
 		.content-container {
 			background-color: #fff;
@@ -51,16 +51,16 @@
 			padding: 15px;
 			width: 100%;
 		}
-
+		
 		.content-container {
 			padding-left: 0px;
 			/* Reduced padding on the left side */
 		}
-
+		
 		.object-fit-cover {
 			object-fit: cover;
 		}
-
+		
 		.social-icons {
 			display: flex;
 			justify-content: center;
@@ -71,65 +71,65 @@
 			margin-top: auto;
 			/* Ensure the icons stay at the bottom of the sidebar */
 		}
-
+		
 		.social-icons a {
 			text-decoration: none;
 			/* Removes the underline */
 		}
-
+		
 		.social-icons i {
 			color: black;
 			/* Removes the underline */
 		}
-
+		
 		.spacer {
 			margin-bottom: 0.5cm;
 		}
-
+		
 		/* Responsive About Section */
 		@media (max-width: 768px) {
 			.about-container .row {
 				flex-direction: column;
 			}
-
+			
 			.about-container img {
 				margin-bottom: 20px;
 			}
 		}
-
+		
 		/* Sidebar collapse CSS */
 		.sidebar-container {
 			position: relative;
 		}
-
+		
 		.collapse-btn {
 			position: fixed;
 			top: 10px;
 			left: 10px;
 			z-index: 1050;
 		}
-
+		
 		.sidebar.collapsed {
 			margin-left: -280px;
 		}
-
+		
 		/* Add this for main content adjustment when using the sidebar */
 		.content-wrapper {
 			margin-left: 280px;
 			transition: all 0.3s;
 		}
-
+		
 		.content-wrapper.expanded {
 			margin-left: 0;
 		}
-
+		
 		/* Responsive adjustments */
 		@media (max-width: 768px) {
 			.content-wrapper {
 				margin-left: 0 !important;
 				width: 100%;
 			}
-
+			
 			/* Make sure the sidebar doesn't push content when it appears */
 			.sidebar.active {
 				z-index: 1040;
@@ -146,124 +146,124 @@
 			<title>jh</title>
 			<circle cx="59" cy="47" r="45" fill="black" />
 			<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-				font-family="'Brush Script MT', cursive" font-size="65" fill="white">
-				Jh
-			</text>
-		</symbol>
-		<symbol id="home" viewBox="0 0 16 16">
-			<path
-				d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
-			</path>
-		</symbol>
-		<symbol id="speedometer2" viewBox="0 0 16 16">
-			<path
-				d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
-			</path>
-			<path fill-rule="evenodd"
-				d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
-			</path>
-		</symbol>
-		<symbol id="table" viewBox="0 0 16 16">
-			<path
-				d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
-			</path>
-		</symbol>
-		<symbol id="people-circle" viewBox="0 0 16 16">
-			<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-			<path fill-rule="evenodd"
-				d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
-			</path>
-		</symbol>
-		<symbol id="grid" viewBox="0 0 16 16">
-			<path
-				d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
-			</path>
-		</symbol>
+			font-family="'Brush Script MT', cursive" font-size="65" fill="white">
+			Jh
+		</text>
+	</symbol>
+	<symbol id="home" viewBox="0 0 16 16">
+		<path
+		d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+	</path>
+</symbol>
+<symbol id="speedometer2" viewBox="0 0 16 16">
+	<path
+	d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+</path>
+<path fill-rule="evenodd"
+d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+</path>
+</symbol>
+<symbol id="table" viewBox="0 0 16 16">
+	<path
+	d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+</path>
+</symbol>
+<symbol id="people-circle" viewBox="0 0 16 16">
+	<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+	<path fill-rule="evenodd"
+	d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+</path>
+</symbol>
+<symbol id="grid" viewBox="0 0 16 16">
+	<path
+	d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+</path>
+</symbol>
+</svg>
+
+<!-- Sidebar with collapse functionality -->
+<div class="sidebar-container">
+	<!-- Hamburger toggle button - visible only on small screens -->
+	<button class="btn btn-primary d-md-none collapse-btn" type="button" id="sidebarCollapse">
+		<i class="fas fa-bars"></i>
+	</button>
+	
+	<!-- Sidebar content -->
+	<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary sidebar" id="sidebar"
+	style="width: 280px; position: fixed; top: 0; left: 0; height: 100vh; transition: all 0.3s;">
+	<a href="#about"
+	class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+	<svg class="bi pe-none me-2" width="40" height="32">
+		<use xlink:href="#jh"></use>
 	</svg>
+	<span class="fs-4">Joseph Huang</span>
+</a>
+<hr>
+<ul class="nav nav-pills flex-column mb-auto">
+	<li class="nav-item">
+		<a href="#about" class="nav-link link-body-emphasis">
+			<svg class="bi pe-none me-2" width="16" height="16">
+				<use xlink:href="#home"></use>
+			</svg>
+			Home
+		</a>
+	</li>
+	<li>
+		<a href="#education" class="nav-link link-body-emphasis">
+			<svg class="bi pe-none me-2" width="16" height="16">
+				<use xlink:href="#table"></use>
+			</svg>
+			Education
+		</a>
+	</li>
+	<li>
+		<a href="#experience" class="nav-link link-body-emphasis">
+			<svg class="bi pe-none me-2" width="16" height="16">
+				<use xlink:href="#speedometer2"></use>
+			</svg>
+			Experience
+		</a>
+	</li>
+</ul>
 
-	<!-- Sidebar with collapse functionality -->
-	<div class="sidebar-container">
-		<!-- Hamburger toggle button - visible only on small screens -->
-		<button class="btn btn-primary d-md-none collapse-btn" type="button" id="sidebarCollapse">
-			<i class="fas fa-bars"></i>
-		</button>
+<div class="social-icons mt-auto">
+	<a style="margin: 0 5px 0 0" href="assets/Joseph_Huang_Resume.pdf" target="_blank">
+		<i class="ai ai-cv" style="font-size:1.3rem;"></i>
+	</a>
+	<a style="margin: 0 5px 0 0" href="https://github.com/jjhuang24" target="_blank">
+		<i class="fab fa-github" style="font-size: 1.3rem;"></i>
+	</a>
+	<a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/josephjhuang/" target="_blank">
+		<i class="fab fa-linkedin" style="font-size: 1.3rem;"></i>
+	</a>
+	<a style="margin: 0 5px 0 0" href="mailto:jjhuang@purdue.edu">
+		<i class="fas fa-envelope" style="font-size:1.3rem;"></i>
+	</a>
+</div>
+</div>
+</div>
 
-		<!-- Sidebar content -->
-		<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary sidebar" id="sidebar"
-			style="width: 280px; position: fixed; top: 0; left: 0; height: 100vh; transition: all 0.3s;">
-			<a href="#about"
-				class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-				<svg class="bi pe-none me-2" width="40" height="32">
-					<use xlink:href="#jh"></use>
-				</svg>
-				<span class="fs-4">Joseph Huang</span>
-			</a>
-			<hr>
-			<ul class="nav nav-pills flex-column mb-auto">
-				<li class="nav-item">
-					<a href="#about" class="nav-link link-body-emphasis">
-						<svg class="bi pe-none me-2" width="16" height="16">
-							<use xlink:href="#home"></use>
-						</svg>
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="#education" class="nav-link link-body-emphasis">
-						<svg class="bi pe-none me-2" width="16" height="16">
-							<use xlink:href="#table"></use>
-						</svg>
-						Education
-					</a>
-				</li>
-				<li>
-					<a href="#experience" class="nav-link link-body-emphasis">
-						<svg class="bi pe-none me-2" width="16" height="16">
-							<use xlink:href="#speedometer2"></use>
-						</svg>
-						Experience
-					</a>
-				</li>
-			</ul>
-
-			<div class="social-icons mt-auto">
-				<a style="margin: 0 5px 0 0" href="assets/Joseph_Huang_Resume.pdf" target="_blank">
-					<i class="ai ai-cv" style="font-size:1.3rem;"></i>
-				</a>
-				<a style="margin: 0 5px 0 0" href="https://github.com/jjhuang24" target="_blank">
-					<i class="fab fa-github" style="font-size: 1.3rem;"></i>
-				</a>
-				<a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/josephjhuang/" target="_blank">
-					<i class="fab fa-linkedin" style="font-size: 1.3rem;"></i>
-				</a>
-				<a style="margin: 0 5px 0 0" href="mailto:jjhuang@purdue.edu">
-					<i class="fas fa-envelope" style="font-size:1.3rem;"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- Main content -->
-	<div class="container-fluid content-wrapper" id="mainContent" style="transition: all 0.3s;">
-		<!-- About Section -->
-		<section id="about" class="py-5">
-			<!-- About Section with responsive layout -->
-			<div class="container">
-				<div class="row g-4 align-items-center">
-					<div class="col-md-4 text-center text-md-start">
-						<div class="image-container mb-4 mb-md-0">
-							<img src="images/Joseph_Professional.JPG" alt="Joseph" class="img-fluid rounded"
-								style="max-width: 100%; height: auto;">
-						</div>
+<!-- Main content -->
+<div class="container-fluid content-wrapper" id="mainContent" style="transition: all 0.3s;">
+	<!-- About Section -->
+	<section id="about" class="py-5">
+		<!-- About Section with responsive layout -->
+		<div class="container">
+			<div class="row g-4 align-items-center">
+				<div class="col-md-4 text-center text-md-start">
+					<div class="image-container mb-4 mb-md-0">
+						<img src="images/Joseph_Professional.JPG" alt="Joseph" class="img-fluid rounded"
+						style="max-width: 100%; height: auto;">
 					</div>
-					<div class="col-md-8">
-						<h2>About Me</h2>
-						<p>
-							Hello! I am currently pursuing a Master's degree in Electrical and Computer Engineering
-							at Purdue University, where I work as a Graduate Research Assistant in the <a
-								href="https://engineering.purdue.edu/~ips/">Video and Image Processing Laboratory
-								(VIPER)</a> supervised by <a href="https://engineering.purdue.edu/~zhu0/">Professor
-								Fengqing Maggie Zhu</a>. My research focuses on anomaly detection in images, where I
+				</div>
+				<div class="col-md-8">
+					<h2>About Me</h2>
+					<p>
+						Hello! I am currently pursuing a Master's degree in Electrical and Computer Engineering
+						at Purdue University, where I work as a Graduate Research Assistant in the <a
+						href="https://engineering.purdue.edu/~ips/">Video and Image Processing Laboratory
+						(VIPER)</a> supervised by <a href="https://engineering.purdue.edu/~zhu0/">Professor
+							Fengqing Maggie Zhu</a>. My research focuses on anomaly detection in images, where I
 							explore
 							methods to identify irregularities or defects in visual data, leveraging techniques from
 							computer vision and machine learning to improve accuracy. Prior to this, I earned my
@@ -271,13 +271,13 @@
 						</p>
 						<p>
 							In addition to my academic pursuits, I have one year of professional software
-							development experience, gained through internships at Siemens Digital Industries Software
+							development experience, gained through internships at Cohernt Corp., Siemens Digital Industries Software,
 							and Kinze
 							Manufacturing. During these roles, I worked on developing software solutions, optimizing
 							workflows, and gaining hands-on experience in real-world engineering applications.
 						</p>
 						<p>
-							Outside of academics and work, I enjoy staying active through sports, enjoying time with
+							Outside of academics and work, I enjoy rock climbing, enjoying time with
 							friends, playing musical instruments, and continuously finding new ways to challenge
 							myself.
 						</p>
@@ -285,49 +285,7 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- <section id="about">
-			<table class="imgtable">
-				<tbody>
-					<tr>
-						<td>
-							<img src="images/Joseph_Professional.JPG" alt="Joseph" width="250px"
-								style="padding-right: 20px;">&nbsp;
-						</td>
-						<td align="left">
-							<h2>About Me</h2>
-							<p>
-								Hello! I am currently pursuing a Master's degree in Electrical and Computer Engineering
-								at
-								Purdue University, where I work as a Graduate Research Assistant in the <a
-									href="https://engineering.purdue.edu/~ips/">Video and Image Processing Laboratory
-									(VIPER)</a> supervised by <a href="https://engineering.purdue.edu/~zhu0/">Professor
-									Fengqing
-									Maggie Zhu</a>. My research focuses on anomaly detection in images, where I explore
-								methods to identify irregularities or defects in visual data, leveraging techniques from
-								computer vision and machine learning to improve accuracy. Prior to this, I earned my
-								Bachelor's
-								degree in Computer Engineering from Purdue University in 2024.
-							</p>
-							<p>
-								In addition to my academic pursuits, I have one year of professional software
-								development
-								experience, gained through internships at Siemens Digital Industries Software and Kinze
-								Manufacturing. During these roles, I worked on developing software solutions, optimizing
-								workflows, and gaining hands-on experience in real-world engineering applications.
-							</p>
-							<p>
-								Outside of academics and work, I enjoy staying active through sports, enjoying time with
-								friends, playing musical instruments, and continuously finding new ways to challenge
-								myself.
-							</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</section> -->
-
-
+		
 		<!-- Education Section -->
 		<section id="education">
 			<h2>&nbspEducation</h2>
@@ -339,21 +297,35 @@
 						<div class="card-body d-flex align-items-center">
 							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
 							<div>
-								<h5 class="card-title">M.S. Student in Electrical and Computer Engineering</h5>
+								<h5 class="card-title">PhD Student in Electrical and Computer Engineering</h5>
 								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
-								<p class="card-text"><strong>Duration:</strong> January 2025 - Present</p>
+								<p class="card-text"><strong>Duration:</strong> January 2026 - Present</p>
 							</div>
 						</div>
 					</div>
 				</div>
-
+				
 				<!-- Education Item 2 -->
 				<div class="col-md-12 mb-4">
 					<div class="card shadow-sm">
 						<div class="card-body d-flex align-items-center">
 							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
 							<div>
-								<h5 class="card-title">B.S. Computer Engineering</h5>
+								<h5 class="card-title">MS Electrical and Computer Engineering</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
+								<p class="card-text"><strong>Duration:</strong> January 2025 - December 2025</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Education Item 3 -->
+				<div class="col-md-1s2 mb-4">
+					<div class="card shadow-sm">
+						<div class="card-body d-flex align-items-center">
+							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
+							<div>
+								<h5 class="card-title">BS Computer Engineering</h5>
 								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
 								<p class="card-text"><strong>Duration:</strong> August 2021 - December 2024</p>
 							</div>
@@ -362,7 +334,7 @@
 				</div>
 			</div>
 		</section>
-
+		
 		<!-- Experience Section -->
 		<section id="experience">
 			<h2>&nbspExperience</h2>
@@ -380,175 +352,191 @@
 								<p class="card-text">Conducting research in image processing and computer vision under
 									the
 									guidance of Professor Fengqing Maggie Zhu.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<!-- Experience Item 2 -->
-				<div class="col-md-12 mb-4">
-					<div class="card shadow-sm">
-						<div class="card-body d-flex align-items-center">
-							<img src="images/siemens-logo.png" alt="Siemens Logo" class="company-logo me-3">
-							<div>
-								<h5 class="card-title">Software Engineer Intern</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Siemens Digital Industries Software</h6>
-								<p class="card-text"><strong>Duration:</strong> May 2024 - August 2024</p>
-								<p class="card-text">Developed python scripts to automate compilations of large SoC
-									(System
-									on a Chip) designs. Implemented a user interface to visualize analytics from
-									compilations using interactive plots and tables. Deployed project on designs from 4
-									major semiconductor companies, streamlining workflows across 4+ projects.</p>
+					
+					<!-- Experience Item 2 -->
+					<div class="col-md-12 mb-4">
+						<div class="card shadow-sm">
+							<div class="card-body d-flex align-items-center">
+								<img src="images/coherent-logo.png" alt="Coherent Logo" class="company-logo me-3">
+								<div>
+									<h5 class="card-title">Software Engineer Intern</h5>
+									<h6 class="card-subtitle mb-2 text-muted">Coherent Corp.</h6>
+									<p class="card-text"><strong>Duration:</strong> June 2025 - August 2025</p>
+									<p class="card-text">Developed a custom Optical Character Recognition (OCR) model for reading laser diode serial numbers. Achieved 99%+ accuracy in extracting serial numbers from laser diode images. Built an intuitive user interface in LabWindows/CVI enabling seamless use of the OCR system.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<!-- Experience Item 3 -->
-				<div class="col-md-12 mb-4">
-					<div class="card shadow-sm">
-						<div class="card-body d-flex align-items-center">
-							<img src="images/kinze-logo.png" alt="Kinze Manufacturing Logo" class="company-logo me-3">
-							<div>
-								<h5 class="card-title">Software Engineer Intern</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Kinze Manufacturing</h6>
-								<p class="card-text"><strong>Duration:</strong> May 2023 - December 2023</p>
-								<p class="card-text">Worked with a team of 6 developers in an Agile environment on the
-									Kinze
-									Blue Vantage software. Corrected user interface bugs ranging from visual issues to
-									functionality issues. Developed several new features in the Blue Vantage user
-									interface
-									using Java and XML. Conducted regular testing on the user interface to identify
-									bugs.
-								</p>
+					
+					<!-- Experience Item 3 -->
+					<div class="col-md-12 mb-4">
+						<div class="card shadow-sm">
+							<div class="card-body d-flex align-items-center">
+								<img src="images/siemens-logo.png" alt="Siemens Logo" class="company-logo me-3">
+								<div>
+									<h5 class="card-title">Software Engineer Intern</h5>
+									<h6 class="card-subtitle mb-2 text-muted">Siemens Digital Industries Software</h6>
+									<p class="card-text"><strong>Duration:</strong> May 2024 - August 2024</p>
+									<p class="card-text">Developed python scripts to automate compilations of large SoC
+										(System
+										on a Chip) designs. Implemented a user interface to visualize analytics from
+										compilations using interactive plots and tables. Deployed project on designs from 4
+										major semiconductor companies, streamlining workflows across 4+ projects.</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-
-				<!-- Experience Item 4 -->
-				<div class="col-md-12 mb-4">
-					<div class="card shadow-sm">
-						<div class="card-body d-flex align-items-center">
-							<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
-							<div>
-								<h5 class="card-title">Undergraduate Teaching Assistant</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
-								<p class="card-text"><strong>Duration:</strong> January 2022 - December 2024</p>
-								<p class="card-text">Teaching assistant for multiple classes including CS 159 (Intro to
-									C
-									Programming), ECE 20875 (Python for Data Science), ECE 270 (Digital System Design),
-									ECE
-									362 (Microprocessor Systems and Interfacing), and ECE 570 (Artificial Intelligence).
-									Some
-									of my responsibilities included holding regular office hours, grading written
-									assignments, teaching lab sections with 30+ students over a 3‑hour period weekly,
-									and
-									developing auto‑grading scripts in Python to streamline the grading process.</p>
+						
+						<!-- Experience Item 4 -->
+						<div class="col-md-12 mb-4">
+							<div class="card shadow-sm">
+								<div class="card-body d-flex align-items-center">
+									<img src="images/kinze-logo.png" alt="Kinze Manufacturing Logo" class="company-logo me-3">
+									<div>
+										<h5 class="card-title">Software Engineer Intern</h5>
+										<h6 class="card-subtitle mb-2 text-muted">Kinze Manufacturing</h6>
+										<p class="card-text"><strong>Duration:</strong> May 2023 - December 2023</p>
+										<p class="card-text">Worked with a team of 6 developers in an Agile environment on the
+											Kinze
+											Blue Vantage software. Corrected user interface bugs ranging from visual issues to
+											functionality issues. Developed several new features in the Blue Vantage user
+											interface
+											using Java and XML. Conducted regular testing on the user interface to identify
+											bugs.
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+						
+						<!-- Experience Item 5 -->
+						<div class="col-md-12 mb-4">
+							<div class="card shadow-sm">
+								<div class="card-body d-flex align-items-center">
+									<img src="images/purdue-logo.png" alt="Purdue University Logo" class="company-logo me-3">
+									<div>
+										<h5 class="card-title">Undergraduate Teaching Assistant</h5>
+										<h6 class="card-subtitle mb-2 text-muted">Purdue University</h6>
+										<p class="card-text"><strong>Duration:</strong> January 2022 - December 2024</p>
+										<p class="card-text">Teaching assistant for multiple classes including CS 159 (Intro to
+											C
+											Programming), ECE 20875 (Python for Data Science), ECE 270 (Digital System Design),
+											ECE
+											362 (Microprocessor Systems and Interfacing), and ECE 570 (Artificial Intelligence).
+											Some
+											of my responsibilities included holding regular office hours, grading written
+											assignments, teaching lab sections with 30+ students over a 3‑hour period weekly,
+											and
+											developing auto‑grading scripts in Python to streamline the grading process.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
 				</div>
 			</div>
-		</section>
-
-	</div>
-	</div>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-		crossorigin="anonymous"></script>
-	<script src="main.js"></script>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const sidebarCollapse = document.getElementById('sidebarCollapse');
-			const sidebar = document.getElementById('sidebar');
-			const mainContent = document.getElementById('mainContent');
-
-			// Function to adjust main content based on screen size and sidebar state
-			function adjustMainContent() {
-				if (window.innerWidth <= 768) {
-					// Mobile view
-					mainContent.style.marginLeft = '0px';
-				} else {
-					// Desktop view - adjust based on sidebar state
-					if (sidebar.classList.contains('collapsed')) {
-						mainContent.style.marginLeft = '0px';
-					} else {
-						mainContent.style.marginLeft = '300px';
+			
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+			<script src="main.js"></script>
+			
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const sidebarCollapse = document.getElementById('sidebarCollapse');
+					const sidebar = document.getElementById('sidebar');
+					const mainContent = document.getElementById('mainContent');
+					
+					// Function to adjust main content based on screen size and sidebar state
+					function adjustMainContent() {
+						if (window.innerWidth <= 768) {
+							// Mobile view
+							mainContent.style.marginLeft = '0px';
+						} else {
+							// Desktop view - adjust based on sidebar state
+							if (sidebar.classList.contains('collapsed')) {
+								mainContent.style.marginLeft = '0px';
+							} else {
+								mainContent.style.marginLeft = '300px';
+							}
+						}
 					}
-				}
-			}
-
-			// Initial adjustment on page load
-			adjustMainContent();
-
-			// Default state for mobile devices
-			if (window.innerWidth <= 768) {
-				sidebar.classList.add('collapsed');
-				sidebar.classList.remove('active');
-			}
-
-			// Toggle sidebar visibility
-			sidebarCollapse.addEventListener('click', function () {
-				sidebar.classList.toggle('collapsed');
-				sidebar.classList.toggle('active');
-				adjustMainContent();
-			});
-
-			// Close sidebar when clicking on links (for mobile)
-			const navLinks = document.querySelectorAll('.sidebar .nav-link');
-			navLinks.forEach(function (link) {
-				link.addEventListener('click', function () {
+					
+					// Initial adjustment on page load
+					adjustMainContent();
+					
+					// Default state for mobile devices
 					if (window.innerWidth <= 768) {
 						sidebar.classList.add('collapsed');
 						sidebar.classList.remove('active');
+					}
+					
+					// Toggle sidebar visibility
+					sidebarCollapse.addEventListener('click', function () {
+						sidebar.classList.toggle('collapsed');
+						sidebar.classList.toggle('active');
 						adjustMainContent();
-					}
+					});
+					
+					// Close sidebar when clicking on links (for mobile)
+					const navLinks = document.querySelectorAll('.sidebar .nav-link');
+					navLinks.forEach(function (link) {
+						link.addEventListener('click', function () {
+							if (window.innerWidth <= 768) {
+								sidebar.classList.add('collapsed');
+								sidebar.classList.remove('active');
+								adjustMainContent();
+							}
+						});
+					});
+					
+					// Adjust content on window resize
+					window.addEventListener('resize', adjustMainContent);
 				});
-			});
-
-			// Adjust content on window resize
-			window.addEventListener('resize', adjustMainContent);
-		});
-	</script>
-
-	<script>
-		// Highlight active sidebar link based on scroll position
-		document.addEventListener("DOMContentLoaded", () => {
-			const navLinks = document.querySelectorAll(".nav-link");
-			const sections = document.querySelectorAll("section");
-			const offset = 100; // Adjust for smoothness
-
-			const updateActiveLink = () => {
-				let currentSection = "";
-
-				// Determine the current section based on scroll position
-				sections.forEach((section) => {
-					const sectionTop = section.offsetTop - offset;
-					if (window.scrollY >= sectionTop) {
-						currentSection = section.id;
-					}
+			</script>
+			
+			<script>
+				// Highlight active sidebar link based on scroll position
+				document.addEventListener("DOMContentLoaded", () => {
+					const navLinks = document.querySelectorAll(".nav-link");
+					const sections = document.querySelectorAll("section");
+					const offset = 100; // Adjust for smoothness
+					
+					const updateActiveLink = () => {
+						let currentSection = "";
+						
+						// Determine the current section based on scroll position
+						sections.forEach((section) => {
+							const sectionTop = section.offsetTop - offset;
+							if (window.scrollY >= sectionTop) {
+								currentSection = section.id;
+							}
+						});
+						
+						// Update active class in sidebar
+						navLinks.forEach((link) => {
+							link.classList.remove("active");
+							if (link.getAttribute("href").substring(1) === currentSection) {
+								link.classList.add("active");
+							}
+						});
+					};
+					
+					// Listen for scroll events
+					window.addEventListener("scroll", updateActiveLink);
+					
+					// Initialize the active link on page load
+					updateActiveLink();
 				});
-
-				// Update active class in sidebar
-				navLinks.forEach((link) => {
-					link.classList.remove("active");
-					if (link.getAttribute("href").substring(1) === currentSection) {
-						link.classList.add("active");
-					}
-				});
-			};
-
-			// Listen for scroll events
-			window.addEventListener("scroll", updateActiveLink);
-
-			// Initialize the active link on page load
-			updateActiveLink();
-		});
-	</script>
-
-</body>
-
-</html>
+			</script>
+			
+		</body>
+		
+		</html>
+		
